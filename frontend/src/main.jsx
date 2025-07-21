@@ -20,7 +20,8 @@ import { Provider } from "react-redux"
 import { store } from './redux/store.js'
 
 // Define the base URL of your backend server (used in API calls throughout the app)
-export const serverUrl = "http://localhost:8000"
+// export const serverUrl = "http://localhost:8000"
+export const serverUrl = "https://chat-application-backend-r7m9.onrender.com"
 
 // Render the React app inside the HTML element with id="root"
 createRoot(document.getElementById('root')).render(
