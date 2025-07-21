@@ -17,7 +17,8 @@ const port = process.env.PORT || 5000
 
 // Enable CORS so frontend (running at port 5173) can access this backend
 app.use(cors({
-    origin: "http://localhost:5173",  // Allow requests from frontend
+    //origin: "http://localhost:5173",Allow requests from frontend
+   origin: "https://chat-application-x0fy.onrender.com",  // Allow requests from frontend
     credentials: true                 // Allow cookies to be sent
 }))
 
