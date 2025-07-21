@@ -47,8 +47,8 @@ export const signUp = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true, // Cannot be accessed by client-side JS
             maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days in milliseconds
-            sameSite: "Strict", // Protect against CSRF
-            secure: false // Set true if using HTTPS (e.g., in production)
+            sameSite: "None", // Protect against CSRF
+            secure: true // Set true if using HTTPS (e.g., in production)
         });
 
         // Respond with the created user object
@@ -86,8 +86,8 @@ export const login = async (req, res) => {
         res.cookie("token", token, {
             httpOnly: true,
             maxAge: 7 * 24 * 60 * 60 * 1000,
-            sameSite: "Strict",
-            secure: false
+            sameSite: "None",
+            secure: true
         });
 
         // Respond with user info
