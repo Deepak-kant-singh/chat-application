@@ -12,7 +12,8 @@ const server = http.createServer(app)
 // Create a new instance of socket.io server and configure CORS
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173"  // Allow connection from frontend running on port 5173 (Vite)
+       // origin: "http://localhost:5173"  // Allow connection from frontend running on port 5173 (Vite)
+      origin: "https://chat-application-x0fy.onrender.com"
     }
 })
 
